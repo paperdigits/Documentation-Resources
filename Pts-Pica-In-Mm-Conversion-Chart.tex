@@ -1,0 +1,75 @@
+\documentclass[12pt, letterpaper, oneside]{article}
+
+\usepackage{longtable}
+\usepackage{colortbl}
+%------------Page Demnsions------------%
+\addtolength{\oddsidemargin}{-0.5in} %Sets the odd numbered page margins to 1 inch.
+\addtolength{\evensidemargin}{-0.5in} %Sets the even numbered page margins to 1 inch.
+\addtolength{\textwidth}{1in} %Widens the text so that flows from margin to margin. This number is double the values set above if odd & even side margins are the same.
+\setlength\headheight{.25in} %Sets the height of the header to 1/4 of an inch.
+\addtolength{\topmargin}{-.875in} %Sets the top margin to 3/4 of an inch.
+\addtolength{\textheight}{1in} %Sets the length from the top margin for the text to start.
+\addtolength{\headheight}{.25in}
+%------------Page Demnsions------------%
+%------------Headers/Footers------------%
+\usepackage{fancyhdr} %Package to allow fine grain control of the headers and footers of documents.
+\pagestyle{fancy} %Sets the page styles to fancy.
+
+\fancyhead{} %Clears LaTeX's default header style. Do not add any text here.
+\fancyfoot{} %Clears LaTeX's default footer style. Do not add any text here.
+			
+\lhead{} %The text in the left hand part of header.
+\chead{\Large \sffamily Conversion Chart -- Picas, Points, Inches, \& Millimeters} %The text in the center of the header.
+\rhead{} %The text in the right hand part of the header.
+\lfoot{\small \sffamily \today} %The text in the left hand part of the footer.
+\cfoot{} %The text in the center part of the footer.
+\rfoot{} %The text in the right hand part of the footer.
+%------------Headers/Footers------------%
+
+%------------Fonts------------%
+%\usepackage{palatino}
+\usepackage{helvet}
+\usepackage{sectsty}
+\allsectionsfont{\normalfont \sffamily}
+%------------Fonts------------%
+%------------Multicolumn TOC------------%
+\RequirePackage{multicol}
+%\RequirePackage{ifthen}
+%\usepackage[toc]{multitoc}
+%------------Multicolumn TOC------------%
+
+\begin{document}
+\sffamily
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Inches} & \textbf{Pica} & \textbf{Pica (common)} & \textbf{Points} & \textbf{Points (common)} \tabularnewline \hline
+1 & 6.022 & 6 & 72.270 & 72 \tabularnewline \hline
+\rowcolor[rgb]{0.85,0.85,0.85} 1.25 & 7.528 & 7.5 & 90.337 & 90 \tabularnewline \hline
+1.50 & 9.033 & 9 & 108.405 & 108 \tabularnewline \hline
+\rowcolor[rgb]{0.85,0.85,0.85} 1.75 & 10.539 & 10.5 & 126.472 & 126 \tabularnewline \hline
+2.00 & 12.044 & 12 & 144.540 & 144 \tabularnewline \hline
+\end{tabular}
+\end{center}
+
+\noindent 1 ft = 12 inches = 72 picas\\
+1 in = 6 picas = 72 points\\
+1 pica = 12 points
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Inches} & \textbf{Points} & \textbf{Picas,Points} \tabularnewline \hline 
+.25 & 18 & 1p6 \tabularnewline \hline  
+\rowcolor[rgb]{0.85,0.85,0.85} .50 & 36 & 3p \tabularnewline \hline
+.75 & 54 & 4p6 \tabularnewline \hline
+\end{tabular}
+\end{center}
+
+\noindent 1.25 inches = 7p6 (7 picas and 6 points)\\
+1.50 inches = 9p\\
+1.75 inches = 10p6
+
+
+\end{document}

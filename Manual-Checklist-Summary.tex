@@ -1,0 +1,95 @@
+\documentclass[12pt, letterpaper, oneside]{article}
+
+\usepackage{amsfonts}
+
+%------------Page Demnsions------------%
+\addtolength{\oddsidemargin}{-0.5in} %Sets the odd numbered page margins to 1 inch.
+\addtolength{\evensidemargin}{-0.5in} %Sets the even numbered page margins to 1 inch.
+\addtolength{\textwidth}{1in} %Widens the text so that flows from margin to margin. This number is double the values set above if odd & even side margins are the same.
+\setlength\headheight{.25in} %Sets the height of the header to 1/4 of an inch.
+\addtolength{\topmargin}{-.875in} %Sets the top margin to 3/4 of an inch.
+\addtolength{\textheight}{1in} %Sets the length from the top margin for the text to start.
+\addtolength{\headheight}{.25in}
+%------------Page Demnsions------------%
+%------------Fonts------------%
+%\usepackage{palatino}
+\usepackage{helvet}
+\usepackage{sectsty}
+\allsectionsfont{\normalfont \sffamily}
+%------------Fonts------------%
+%------------Multicolumn TOC------------%
+\RequirePackage{multicol}
+%\RequirePackage{ifthen}
+%\usepackage[toc]{multitoc}
+%------------Multicolumn TOC------------%
+%------------Headers/Footers------------%
+\usepackage{fancyhdr} %Package to allow fine grain control of the headers and footers of documents.
+\pagestyle{fancy} %Sets the page styles to fancy.
+
+\fancyhead{} %Clears LaTeX's default header style. Do not add any text here.
+\fancyfoot{} %Clears LaTeX's default footer style. Do not add any text here.
+			
+\lhead{} %The text in the left hand part of header.
+\chead{\Large \sffamily Checklist Summary} %The text in the center of the header.
+\rhead{} %The text in the right hand part of the header.
+\lfoot{\small \sffamily \today} %The text in the left hand part of the footer.
+\cfoot{} %The text in the center part of the footer.
+\rfoot{} %The text in the right hand part of the footer.
+%------------Headers/Footers------------%
+
+\begin{document}
+\begin{multicols}{2}
+\sffamily
+
+\paragraph{Our manual:}
+
+\begin{itemize} \itemsep -2pt
+	\item[$\Box$] complies with all labeling regulations
+	\item[$\Box$]  is written for the type of people who use our device
+	\item[$\Box$]  tells the user how to get help from us
+	\item[$\Box$]  includes a Table of Contents
+	\item[$\Box$]  has general warnings and precautions at he beginning
+	\item[$\Box$]  briefly describes the purpose of the device
+	\item[$\Box$]  give a physical description of the device with a graphic
+	\item[$\Box$]  explains conditions under which the device should and should not be used
+	\item[$\Box$]  gives clear setup instructions
+	\item[$\Box$]  gives clear check-out procedures
+	\item[$\Box$]  gives clear and easy to follow operating instructions
+	\item[$\Box$]  provides cleaning instructions
+	\item[$\Box$]  describes maintenance that the lay user should do
+	\item[$\Box$]  explains storage
+	\item[$\Box$]  has a clear, easy-to-use \& find troubleshooting section
+	\item[$\Box$]  has a summary page with all the critical information on it
+	\item[$\Box$]  has an alphabetized index
+	\item[$\Box$]  has an easy to find date of printing
+	\item[$\Box$]  includes instructions on any accessories
+\end{itemize}
+
+\paragraph{We have:}
+
+\begin{itemize} \itemsep -2pt
+	\item[$\Box$]  done a task analysis for the procedures in our manual
+	\item[$\Box$]  selected a suitable format (text, flowchart, list)
+	\item[$\Box$]  written and formatted procedures correctly
+	\item[$\Box$]  used appropriate sentence construction and word choice
+	\item[$\Box$]  tested our manual to assure sixth to seventh grade reading level
+	\item[$\Box$]  properly written and placed specific warnings and cautions
+	\item[$\Box$]  has a durable distinctive cover
+	\item[$\Box$]  will stand up to the conditions in which it will be used
+	\item[$\Box$]  is constructed of non-shiny durable paper
+	\item[$\Box$]  is laid out to make sections easy to find and update (tabs, binding, page numbering)
+	\item[$\Box$]  uses white space and other highlighting techniques to focus user attention on important information
+	\item[$\Box$]  is printed in at least 12 point type
+	\item[$\Box$]  has clear, well-labeled graphics in key places to help users understand text
+	\item[$\Box$]  is printed in proper contrast
+\end{itemize}
+
+\paragraph{We have:}
+
+\begin{itemize} \itemsep -2pt
+	\item[$\Box$]  tested the manual to make sure that our users can read, understand, and follow it
+	\item[$\Box$]  have taken steps to make sure that our manual gets to our users 
+\end{itemize}
+
+\end{multicols}
+\end{document}

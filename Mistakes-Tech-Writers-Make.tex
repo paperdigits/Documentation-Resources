@@ -1,0 +1,333 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{microtype}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+%\usepackage{multicol}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+
+%------------Fonts------------%
+\usepackage{palatino}
+\usepackage{helvet}
+\usepackage{sectsty}
+\allsectionsfont{\normalfont \sffamily}
+%------------Fonts------------%
+
+\title{Common Errors in Technical Writing}
+\author{}
+
+\begin{document}
+\maketitle
+%\begin{multicols}{2}
+
+This document has been lifted in full from \href{http://www.docsymmetry.com/mistakes-technical-writers-make.html}{http://www.docsymmetry.com/mistakes-technical-writers-make.html}. Thanks!
+
+\section{Are You Making These Writing Mistakes?}
+
+Inexperienced technical writers typically make a number of avoidable mistakes, including parroting the SME and hard-coding cross-references (x-refs). Here is a description of the mistakes to avoid.
+
+\subsection{Not Understanding the Product or Application}
+
+This problem takes two forms: In the first, the subject-matter experts (SMEs) write the preliminary documentation, and then the writer does nothing but edit it (this is the worst kind of writer and I am assuming that, if you are reading this, you are not one of them). In the second, the writer does all the writing, but repeats verbatim the words of the SME in the document. Technical writers know they've done this when they write sentences that they don't fully understand.
+
+When you review your document, try to read it from the user's point of view. Imagine that you are reading it for the first time. If your document contains any sentences that you don't understand, assume that your reader won't understand them either. Rewrite them.
+
+\subsection{Parroting the Subject-Matter Expert (SME)}
+All professions and companies have a vocabulary that is meaningful only to those in the company or the profession. A common mistake among both SMEs and writers is to assume that the user understands the vocabulary.
+
+To illustrate, I once shared an office with a software developer who was in charge of seeing that the separate parts of the application worked together. Every so often, someone would come in to report that a particular software function had abended. When I
+asked these people what abended meant, they were at such a complete loss for words it was as though I had asked them to define the word \emph{and}. I could see that \emph{abend} held so much meaning for them that they were unable to condense all of its concepts into a single definition.
+
+A short time later, I reviewed a document that contained the word \emph{abend}. I called in the writer and asked him what it meant. He looked me in the eye and said, ``I don't know,'' thus providing me with a golden opportunity to give my ``Don't parrot the SME speech,'' which is:
+
+\begin{quote}
+As technical writers, it is our job to translate the complex and puzzling into something that everyone and anyone can understand. You and I represent Joe User. If you don't understand something, it is a sure bet that Joe User won't understand it either. Never
+repeat verbatim the words of the SME. Always ask for clarification. Now I know it is embarrassing to stand in front of the SME asking questions that the SME clearly regards as stupid, but sometimes it's the only way to get information. You have to persist. And if you can't get the information from the SME, then you have to do other kinds of research. Check the Internet, go the library, read the standards. Do whatever it takes to ensure that each word, sentence, and paragraph in your document is meaningful to everyone.
+\end{quote}
+
+Notice that my ``Don't parrot the SME speech'' also contains a concise definition of technical writing:
+
+\begin{quote}
+Technical writers translate the complex and puzzling into something that everyone and anyone can understand.
+\end{quote}
+
+Finally, to find out what abend means, click \href{http://www.geek.com/glossary/glossary_search.cgi?a}{here}. Or, if you have installed the Google toolbar in your browser, type \textbf{define: abend} in the Google search box.
+
+\subsection{Working Without a Plan}
+When you work without a plan, you create extra work for yourself or for someone else later on. Without a plan, you will find that new information cannot easily be incorporated into your documents as the project progresses or when the software is revised. In fact, without a plan, you will run into a host of problems.Your plan should include:
+
+\begin{itemize} \itemsep -2pt
+	\item a list of the documents or chapters that will be written, usually:
+		\begin{itemize} \itemsep -2pt
+			\item product description
+			\item installation guide
+			\item configuration guide
+			\item user guide (or system administration guide)
+			\item others
+		\end{itemize}
+	\item the file-naming conventions that will be used
+	\item the location in the network where the documents will be stored
+	\item the method by which the documentation will be delivered to the customer, e.g.:
+	  \begin{itemize} \itemsep -2pt
+	  	\item shipped (hard copy)
+	  	\item shipped (CD)
+	  	\item downloaded from a server
+	  	\item integrated with the application
+	  \end{itemize}
+	\item the method by which the customer will access the documentation, e.g.:
+	  \begin{itemize} \itemsep -2pt
+		  \item from a binder
+  		\item from a web page or CD
+  		\item through a help button in a GUI
+		\end{itemize}
+\end{itemize}
+
+As you begin to understand the product or application you are documenting, you must also plan the documents themselves:
+
+\begin{itemize} \itemsep -2pt
+	\item the look and feel of each document in relation to itself and to the   other documents in the suite
+	\item the content that will be the same in each document (boilerplate)
+	\item the content of each document and chapter
+	\item the order in which the information is to be presented
+\end{itemize}
+
+\subsection{No File-Naming Convention}
+Creating a file-naming convention is one of the most considerate things you can do for the other technical writers on your team and for the technical writers who will replace you after you have moved onto other projects.
+
+Imagine that you are documenting a network application called QDO. This network has four nodes (named BBB, QETO, IB, and PBN), each of which requires a product description, installation guide, configuration guide, and user guide. IB and QETO also require a
+command reference guide, and since PBN includes a GUI, it requires online help for 25 features, each of which comprise the functions of Add, Modify, and Delete. Confused? Unless you have a file-naming convention, everyone else at work will be too.
+
+Your file-naming convention should make sense to you and to others. For example, you might decide on a file-naming convention that
+starts with the node name followed by the document name. Thus the file name for the product description of the BBB node would be bbb\_pd.doc (or bbb\_pd.fm), and the filename for the installation guide of the IB node would be ib\_inst.doc (or ib\_inst.fm). It is probably not necessary to put the application name in the file name because all documents associated with the application will be kept in a folder named after the application. If you are creating a large document from a number of smaller documents, consider using a file-naming convention for the smaller documents too.
+
+One caution: do not use ``chapter 1'' (e.g., bbb\_pd\_chapter1.fm), etc., in your file-naming convention, because chapter order tends to shift during the project, and because new chapters will likely be added throughout the life of the product. Instead, use a word that indicates the content of the chapter, otherwise your file names might end up looking like this:
+
+bbb\_pd\_cover.fm\\bbb\_pd\_title.fm\\bbb\_pd\_toc.fm\\bbb\_pd\_intro.fm\\bbb\_pd\_ch2.fm\\bbb\_pd\_ch1.fm\\bbb\_pd\_ch3.fm\\bbb\_pd\_gloss.fm\\bbb\_pd\_back.fm
+
+\subsection{No Document-Numbering Plan}
+Most companies do in fact number their documents, but the number, such as CQZ3391-Y, is often meaningless. Since one of the purposes of a numbering plan is to make it easy for the ordering center to assemble a product and ship it to the customer, you should create a numbering plan that makes sense. A more intuitive numbering plan, therefore, is xxx-yyy-zzz, where:
+
+\begin{itemize} \itemsep -2pt 
+	\item[] xxx is the application name
+	\item[] yyy is the node name
+	\item[] zzz is the product (hardware, software, or document) name 
+\end{itemize}
+
+Thus, continuing with our network application example above, let's say that the QDO application is given the number of 654, the BBB node is given the number 175, and the IB node is given the number 176. All BBB products associated with the QDO application will be numbered 654-175-zzz (I'll get to the zzz in a moment) and all IB products will be numbered 654-176-zzz.
+
+Now let's say that, for every node your company produces, you will create one or more of the following documents:
+
+\begin{itemize} \itemsep -2pt
+	\item product description
+	\item site preparation guide
+	\item acceptance testing procedures
+	\item installation guide
+	\item configuration guide
+	\item user guide
+	\item command reference guide
+	\item alarms and notifications guide
+	\item troubleshooting guide
+	\item maintenance procedures
+\end{itemize}
+
+You can specify that each one of these documents will have a specific number. All of your company's product descriptions might be numbered, say, 801, and all site preparation guides 802. Number the remaining documents consecutively. With this numbering plan, the product description for the BBB node will be numbered 654-175-801, the product description for the IB node will be numbered 654-176-801, and the maintenance procedures will be numbered 654-yyy-810.
+
+The document number should be displayed in your document. In my documents, I put the document number on the title page and in the footers.
+
+\subsection{No Revision-Numbering Plan}
+The revision number indicates which version of the document the customer is using, and which version you are writing. It is a good idea to have two sections to your revision number. The first part indicates the version of the application, and the second part indicates the revision number of the document. Thus:
+
+\begin{itemize} \itemsep -2pt
+	\item Version 1.0 is the original version of the document for the first version of the product or application
+	\item Version 1.1 is the first revision
+	\item Version 1.8 is the eighth revision
+	\item Version 2.0 is a completely new release of the document for the second version of the product or application
+\end{itemize}
+The revision number should be displayed in your document. In my documents, I put the revision number on the title page and in the footers.
+
+\subsection{Not Using a Template}
+Of the many companies I have worked for over the years, nine of them were large enough and old enough to have fully developed templates, but only two of them did. Considering how much time (which, in business, is money) is saved by the use of templates, I am amazed that more companies don't use them.
+
+Many people think that a template defines only the paragraph styles used in a document. In fact, a well-designed template contains not only paragraph styles, but also the layout for every page element (headers, footers, headings, tables, paragraphs, steps, notes,
+precautionary messages, etc.) and every book element (front cover, title page, TOC, chapters, glossary, back cover, etc.). All of
+these elements require a great deal of thought and quite a lot of time to design so that the template is easy for the writer to use and easy for the user to read.
+
+If you design your documents from scratch for every project, they are likely to be poorly designed. Furthermore, the time you spend designing the templates must be added to the cost of each project, as well as the extra writing time demanded by a poorly designed document.
+
+Templates create focus and reduce the amount of work. If you are documenting an application's alarm-clearing procedures, for example, you will find the job much easier if you are working with an alarm-clearing-procedures template. By pre-designing a document from cover to cover, and by including boilerplate text wherever possible, you allow writers to focus on the content of the document and not on its design.
+
+Templates reduce errors. For example, the title of a book generally appears in several places throughout the document, such as on the front cover, on the title page, in the footers, and on the back cover. The problem is that book titles have a tendency to change several times during a project. Technical writers usually remember to change the title on the cover page, but often forget to change the title page, footers, and back cover. Templates allow you to link these elements so that if one element changes, all of the related elements change automatically.
+
+Templates are reusable. Once you have created the first set of templates, you never have to create them again. You can reuse them in every project after that.
+
+Templates establish your company's corporate brand in the marketplace. When documents are created from scratch for each project, every document you send to your customers will have a different look and feel. Why not create a template that allows customers to recognize your excellent documentation?
+
+Templates help your customers feel comfortable. Unlike marketing documents, which are intended to impress your customers with your way-ahead-of-the-competition style, technical documents should reassure your customers with their predictability, comfort, and ease of use. Templates create a consistent style, which helps your customers know what they will find in your documents.
+
+\subsection{Using a One-Size-Fits-All Template}
+Of the companies that do create templates, many create a single template that is intended to be used for all documents, whether the document is a product description, for example, or a command reference guide. Such a template can become a constant source of irritation because it never quite suits its purpose. There are always more paragraph styles than are required in any one document and these must continually be tweaked to meet the purpose of the document. For example, a command reference guide needs styles for commands, command responses, and parameters, but a product description does not. Similarly, procedural documents such as installation guides require styles for numbered steps, but a product description does not. Furthermore, some documents?command reference guides, for instance?often require narrower margins than the other documents in the suite.
+
+Rather than creating a single, multi-purpose template, create a template for each type of document. While the look and feel of all
+the documents should appear to be the same from the user's point of view, subtle differences in the design of the templates will make the documents easier to write.
+
+\subsection{Using a Bells-and-Whistles Template}
+Many companies do not have the skills in house to design their own templates and so they outsource the job to another company. The first mistake many of these outsourced companies make is to design a single template, as described above. The second mistake they make is to add so many unnecessary features to the template that it is impossible to use. 
+
+I once worked for a telecommunications corporation that, despite its longevity and size, was only just beginning to develop its policies and procedures for document creation. At one point, the company sent out a template to the writers, saying that we were
+required to use it from now on. It had all sorts of fancy features like grid marks, crop marks, tables to be used in this kind of document, tables to be used in that, headings for this and headings for that, all kinds of automatic document-management features (none of which worked), and much, much more. Unfortunately, none of us could figure out how to use it, and so we didn't.
+
+It must have cost a small fortune to create such a feature-rich template, particularly since the work was not done in house, but outsourced to another company. I am told that the template is still not in use. What a waste of money!
+
+A template should not only ensure that the documentation has the same look and feel, but it should also make the task of writing easier. The greater the number of fancy design features in a template, the more difficult it is for the writer to use. And since fancy design features do not benefit the customer by making the documentation easier to read, they are completely unnecessary.
+
+You should design a template for each type of document your company creates. Each template should be designed so that it is easy to use. If this is the first time you have created templates, expect to spend about one month designing the first template and a week or two on the others. Expect to spend more time if you also plan to add boilerplate text to your templates. You will probably find that you have to tweak the templates frequently as you write the first version of the documentation. For example, if the standard text area in your templates is 6.5 inches, you might discover that commands are too long to fit. In this situation, you might decide that documents containing commands should have a text area of 7.5 inches.
+
+For help in designing your templates, one of the first things you can do is open any reference book and examine how the publisher has designed it. Notice the position of the book elements and the page elements, then try to recreate them in your templates. I also recommend that you get a copy of \href{books-for-technical-writers.html#Chicago}{The Chicago Manual of Style}. You will refer to it often.
+
+Once you are an experienced template designer, you will find that you can create a whole suite of templates in less than a month. If you are a consultant, template design is an excellent skill to have and one that you will use frequently!
+
+\subsection{Hard-Coding the Table of Contents, Cross-References, and Caption Numbers}
+This error is the hallmark of the inexperienced writer. If you hard-code the table of contents (TOC), cross-references (x-refs), and caption numbers (i.e. you type them by hand rather than letting your desktop publishing software create them), they will be out of date, if not by the time your document is released, then as soon as it is updated by someone else. If you don't know how to create these things electronically, consult the help files of your desktop publishing software.
+
+\subsection{Multiple Tab Stops}
+This problem does not affect the user, but it irritates anyone who has to update your documents. This problem is often seen in longer system responses, such as: 
+
+\begin{center} \includegraphics[width=0.75\textwidth]{tabstops.jpg} \end{center}
+
+Inexperienced writers tend to use the desktop publishing software's default tab stops to align the columns in system responses, which can result in multiple tab stops between the text elements. But let's say that, in the next version of the software, another column of information is added in the middle of the system response. The writer will have to add, delete, or re-set all of the tab stops in order to realign the columns.
+
+Always delete extra tab stops so that there is only one between each text element.
+
+\subsection{No Glossary}
+Many companies regard glossaries as nice to have rather than essential. But try to imagine reading your document for the first time. All those acronyms and technical terms increase the reading difficulty of your document a thousandfold. Actually, maybe it's only a hundredfold. Regardless, out of compassion for your bewildered and busy reader, include a glossary with your document.
+
+To go to my page about creating glossaries, click \href{glossaries.html}{here}.
+
+\subsection{Putting Information in the Wrong Order}
+In step-action procedures, many writers first tell the user what to do, and then they tell them where to do it. In fact, you should first tell the user where to do the task, and then tell them what to do. This is called "situating the user."
+
+\paragraph{Example:}
+
+\begin{itemize} \itemsep -2pt
+	\item[Incorrect:] Select \textbf{Style} from the Format menu.
+	\item[Correct:] On the Format menu, select \textbf{Style}. 
+\end{itemize}
+
+In non-procedural documents, start with the big picture and then narrow in on the details. For example, in the product description for the BBB, you would start by describing the QDO. You would then describe the BBB node's relationship with QDO and its relationship with the other nodes in the network. Each chapter begins with a short summary of the contents of the chapter, as illustrated in the following ``quotation'' from the first chapter of the non-existent \emph{QDO BBB Node Product Description}:
+
+\begin{quote}
+The BBB node manages communication among the four nodes of the QDO network. The four nodes are:
+
+\begin{itemize} \itemsep -2pt
+	\item BBB
+	\item QETO
+	\item IB
+	\item PBN
+\end{itemize}
+
+This chapter describes the QDO network and provides an overview of the functions of the four nodes.
+\end{quote}
+
+\subsection{Poor Spelling}
+
+When you consider that the spell-check function has been around since the beginning of desktop publishing history, it is amazing that more people don't use it. I know I can't spell, and since the user guide for a popular help-authoring tool contains several spelling errors, I know that other writers can't either. There is no excuse for releasing documents that contain spelling errors. Do a spell-check! 
+
+\subsection{Future Tense}
+
+Inexperienced writers often describe an application's response to the user's input as though it happens in the future. For example, they might write, ``When you press \textbf{Enter}, a warning message will appear.'' In technical documentation, nothing happens in the future! The future tense causes the reader to worry. When will the message appear? What if it doesn't appear?
+
+Always write in the present tense:``When you press \textbf{Enter}, a warning message appears.''
+
+Perhaps you are saying to yourself, ``Well that would be fine if our warning messages took less than ten seconds to appear on the screen. That definitely requires the future tense!'' Wrong. In such a situation, you would write, ``When you press \textbf{Enter}, a warning message appears on the screen after ten seconds have elapsed.'' Better yet, write this as a step-action procedure:\\
+
+\begin{enumerate} \itemsep -2pt
+	\item Press \textbf{Enter}. After ten seconds, a warning message   appears.\\
+\end{enumerate}
+
+\subsection{Conditional Tense}
+I wouldn't be talking about this problem if I'd never seen it, but it is quite rare. The use of the conditional tense can occur in documents that are written before the application is complete?when the development team is not entirely sure how the application will respond to the user's input. For example, the SME might tell you, ``When the user presses the ENTER key, a warning message should appear on the screen.'' Unless you hear otherwise, always assume that the warning message does in fact appear. Of course, you should occasionally ask the SME to confirm that the application responds as described.
+
+\subsection{Contractions}
+Contractions are acceptable in many documents, including letters and web sites. Contractions help you to appear friendly and approachable. But the readers of a technical document will never regard you as friendly and approachable, no matter what you do. In fact, a friendly and approachable style in a technical document could make your readers feel patronized. Always use a formal style in technical documents.
+
+\subsection{Non-Parallel Structure In Bulleted Lists}
+Begin each item in a bulleted list with a word of the same grammatical type. If the first item in a list begins with a verb, for example, then all the items in the list must begin with a verb.
+
+\subsection{Uncertain Punctuation In Bulleted Lists}
+Do not use a period after items in a bulleted list unless they are complete sentences. But, if the list contains a mixture of clauses and complete sentences, put a period at the end of each list item.
+
+Do not use the style wherein each list item ends with a semicolon, the penultimate item ends with a semicolon followed by the word \emph{and}, and the final entry ends with a period.
+
+\subsection{Unclear Antecedent (``This'')}
+
+Do not begin a sentence with the word \emph{This} unless its antecedent is obvious.
+
+\paragraph{Example}
+\begin{itemize} \itemsep -2pt
+	\item[Incorrect:] Put on the wrist strap that is attached to the equipment shelf. This prevents static from damaging the circuit board.
+	\item[Correct:] Put on the wrist strap that is attached to the equipment shelf. The wrist strap prevents static from damaging the circuit board.
+\end{itemize}
+
+\subsection{Chapter Number Precedes Page Number}
+Do not use the page-numbering style wherein the chapter number precedes the page number. This style makes it hard for users to find a particular page. This page-numbering style made sense when only hard-copy documents were delivered to the customer because it allowed companies to release updates without having to reprint the whole document. Nowadays, however, the cost of sending hard-copy documentation to the customer is prohibitive and most companies therefore prefer to deliver their documentation electronically. Unless your company sends out hard-copy documentation, use consecutive page numbers.
+
+\subsection{And/Or}
+Do not use \emph{and/or} in your sentences. It delays your readers by forcing them to parse the sentence in order to understand it. Instead, use \emph{\ldots or \ldots or both}. 
+
+\paragraph{Example}
+
+\begin{itemize} \itemsep -2pt
+	\item[Incorrect:] Would you like sugar and/or milk with your coffee?
+	\item[Correct:] Would you like sugar or milk with your coffee, or both?
+\end{itemize}
+
+\subsection{Jargon}
+All companies and all professions have their own vocabularies that should not be used in your documentation.
+
+\paragraph{Examples}
+
+\begin{itemize} \itemsep -2pt
+	\item[Incorrect:] Abort the procedure.
+	\item[Correct:] Close the procedure. 
+		\vspace{12pt}
+	\item[Incorrect:] Energize the VCR
+	\item[Correct:] Press the Power button on the VCR.
+		\vspace{12pt}
+	\item[Incorrect:] Kill the connection.
+	\item[Correct:] Close the connection.
+\end{itemize}
+
+\subsection{Widowed Headings}
+All headings must be followed by text. Never place one heading directly after another without intervening text.
+
+\subsection{Incorrect Position of Warning Messages (Danger, Warning, Caution)}
+Any step that could cause injury, damage, or a loss of service or signal if performed carelessly or incorrectly must be preceded by a warning message. Do not place the warning after the step.
+
+Use Danger messages to prevent death or injury, Warning messages to prevent damage to equipment, and Caution messages to prevent a loss or degradation of signal or service.
+
+\textbf{\emph{Note:}} Standards for precautionary messages are and these standards have different instructions from the ones I have provided above. ANSI Z535.6-2006, \emph{Product Safety Information in Product Manuals, Instructions and Other Collateral Materials}, is the American standard. ISO 3864-2:2004, \emph{Graphical symbols -- Safety colours and safety signs -- Part 2: Design principles for product safety labels}, is the international standard. The American standard requires the use of both graphics and text; the international standard requires the use of graphics only. Use a standard if your company requires it. The warning message must indicate the consequences of a misstep.
+
+\paragraph{Example}
+
+\begin{itemize} \itemsep -2pt
+	\item[Incorrect:] Danger! Ensure that the unit is grounded before switching it on.
+	\item[Correct:] Danger! Risk of electrocution. Ensure that the unit is grounded before switching it on.
+\end{itemize}
+
+\subsection{Neglecting to Think of Your Internal Customers}
+External customers are the people who read your documentation. Internal customers are the people you work with every day, the people who translate your documentation into other languages, and the people who will replace you after you have been promoted to CEO.
+
+As you write your documentation, set up your file structure so that other employees can understand it. Avoid cryptic file names and do not bury your folders deep within the network or save them on your personal drive.
+
+Do not hard-code tables of contents, cross-references, or caption numbers. Do not use multiple tab stops between text elements.
+
+Consider the difficulties of translation as you write. Write so that every word and sentence is perfectly clear and unambiguous. Avoid jargon: words such as \emph{abort} and \emph{kill} do not mean \emph{end} and \emph{close} in other languages. 
+
+Be careful about words that have different meanings for different audiences. For example, the word \emph{table} can mean different things for writers, chefs, software designers, and geographers.
+
+www.docsymmetry.com
+
+%\end{multicols}
+\end{document}
