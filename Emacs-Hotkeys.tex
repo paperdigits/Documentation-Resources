@@ -1,6 +1,7 @@
 \documentclass[12pt,letterpaper,oneside]{article}
 \pagestyle{empty}
 \usepackage{helvet}
+\usepackage{fullpage}
 
 \begin{document}
 \sffamily
@@ -14,10 +15,13 @@ Quit & C-x C-c \\ \hline
 Kill Buffer & C-x k RET \\ \hline
 Open & C-x C-f \\ \hline
 Nav. Buffer & C-x left/right arrow key\\ \hline
+Move between frames & C-x o \\ \hline
 &\\
 Line Start & C-a \\ \hline
 Line End & C-e \\ \hline 
 Kill Line & C-k \\ \hline
+
+Filter buffer through shell & C-u M-! \\ \hline
 & \\
 \textbf{Org Mode} & \\ \hline 
 new heading & M-RET \\ \hline
@@ -27,7 +31,7 @@ Cycle Visibility & S-TAB \\ \hline
 Link Format & [[external link][description]] \\ \hline
 &\\
 \textbf{AucTeX} \\ \hline 
-Compile & C-c C-c RET \\ \hline ol
+Compile & C-c C-c RET \\ \hline
 Toggle PDF/DVI & C-c C-t C-p \\ \hline
 Nav. Errors & C-c ` \\ \hline 
 Command Complete & M-TAB \\ \hline
@@ -37,7 +41,9 @@ Environment & C-c C-e \\ \hline
 & \\
 Bold Face & C-c C-f C-b \\ \hline
 Emph & C-c C-f C-e \\ \hline
-
+&\\
+\textbf{Other} \\ \hline
+Regex Synonyms & M-x synonyms RET word S-TAB \\ \hline
 
 \end{tabular}
 \end{center}
